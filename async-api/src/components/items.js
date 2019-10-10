@@ -18,7 +18,7 @@ const ItemInfo = props => {
     <div>
       {props.error && <p>{props.error}</p>}
       {props.items.map(item => (
-        <Item key={item.id} name={item.name} price={item.sp} />
+        <Item key={item.id} name={item.name} price={item.sell_average} />
       ))}
     </div>
   );
